@@ -5,7 +5,7 @@ pipeline {
   environment {
     IntegrationFlowID = "IntegrationFlow1"
     IntegrationPackage = "CICD" //relevant for flows that are uploaded the first time 
-    DeployFlow = true //if the flow should only be uploaded, set this to false
+    DeployFlow = false //if the flow should only be uploaded, set this to false
     DeploymentCheckRetryCounter = 20 //multiply by 3 to get the maximum deployment time
     CPIHost = "${env.CPI_HOST}"
     CPIOAuthHost = "${env.CPI_OAUTH_HOST}"
